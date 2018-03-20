@@ -1,0 +1,14 @@
+<img src="http://image.tmdb.org/t/p/w1280{{selectedMovie.backdrop_path}}" height="100%" width="100%" />
+
+<div class="info-container">
+    <h1>{{ selectedMovie.title }}</h1>
+    <p class="tagline">"{{ selectedMovie.tagline }}"</p>
+    <ul>
+      <li *ngFor="let genre of genres"></li>
+    </ul>
+    <p>Rating: {{ selectedMovie.vote_average }}/10</p>
+    <p>Runtime: {{ selectedMovie.runtime }} minutes</p>
+    <p class="desc">{{ selectedMovie.overview }}</p>
+    
+    <a href="" (click)="sendMeHome()"><strong>HOME</strong></a>
+</div>

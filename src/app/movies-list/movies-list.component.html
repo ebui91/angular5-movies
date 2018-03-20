@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <h1>ANGULAR MOVIES</h1>
+</nav>
+
+<div class="movies-container">
+  <a *ngFor="let movie of moviesList" [routerLink]="['/details', movie.id]">
+    <div class="movie-card">
+      <img src="http://image.tmdb.org/t/p/w342{{movie.poster_path}}"/>
+
+      <div class="card-info">
+          <h3>{{ movie.title }} <span class="grey-font">({{ movie.release_date }})</span></h3>
+          <p class="grey-font">{{ movie.vote_average }}/10</p>
+      </div>
+    </div>
+  </a>
+</div>

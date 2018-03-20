@@ -1,0 +1,39 @@
+h1 {
+    font-family: Roboto;
+    color: #FFF;
+    font-size: 36px;
+}
+
+p {
+    font-family: Montserrat;
+    color: #EEE;
+}
+
+a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    background: #2AABEE;
+    padding: 5px;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.info-container {
+    height: 30vh;
+    padding: 15px;
+    background: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tagline {
+    font-style: italic;
+    font-family: Roboto;
+}
+
+.desc {
+    width: 80%;
+}
